@@ -223,7 +223,7 @@
             }
 
             for (let i = 0; i < alumnos.length; i++) {
-                if (alumnos[i].value.trim().toLowerCase() === nombre.toLowerCase()) {
+                if (alumnos[i].value.toLowerCase() === nombre.toLowerCase()) {
                     txtNombre.classList.add('error');
                     return false;
                 }
@@ -240,7 +240,7 @@
             let hayCalificacionesVacias = false;
 
             for (let i = 0; i < calificaciones.length; i++) {
-                const valor = calificaciones[i].value.trim();
+                const valor = calificaciones[i].value;
 
                 if (valor === "") {
                     hayCalificacionesVacias = true;
@@ -349,5 +349,6 @@
     </script>
 </body>
 </html>
+
 
 
